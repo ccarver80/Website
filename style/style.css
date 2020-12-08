@@ -4,7 +4,6 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
-
   text-align: center;
   font-size: 40px;
   font-family: cursive, sans-serif;
@@ -19,9 +18,6 @@ nav {
 
 h1{
   background-color: rgba(170, 170, 170, .5);
-  position: absolute;
-  top: 50%;
-  text-align: center;
   font-family: cursive, sans-serif;
   font-size: 100px;
 
