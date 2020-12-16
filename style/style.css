@@ -1,5 +1,5 @@
 header {
-  margin-bottom: 50px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,25 +11,15 @@ header {
   margin-right: 30px;
 }
 
-header h1  {
-  font-family: sans-serif;
-  color: white;
-  display: inline;
-  position: relative;
-  font-size: 50px;
-
-}
-
 
 .navbars {
   position: relative;
   color: white;
   font-size: 40px;
   left: 20px;
-
-
-
 }
+
+
 i {
   padding-right: 20px;
 }
@@ -44,11 +34,10 @@ header div{
   font-size: 40px;
   right: 20px;
 
-
-
 }
 
-
+body {
+  background-color: rgba(255, 223, 211, 1);
 }
 
 main {
@@ -56,27 +45,37 @@ main {
   border-radius: 20px;
   box-shadow: 20px 25px 30px black;
   background-color: rgba(162, 172, 145, 1);
-  height: 900px;
+  height: ;
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 50px
 }
 
-.projects {
-  position: relative;
-  top: 300px;
-  display: block;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 20px 25px 30px black;
-  background-color: white;
+@media (max-width: 1130px) {
+  .qualifications {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+  }
 
-}
+  header {
+    height: 200px;
+  }
 
-.about_me {
-  background-color: white;
-  width: 300px;
-  position: relative;
-  left: 250px;
-  bottom: 200px;
+
+  .navbars {
+    font-size: 75px;
+  }
+
+  header div{
+    font-size: 50px;
+
+  }
+
+  header img{
+    width: 40%
+  }
+
 }
