@@ -7,35 +7,19 @@
   <script src="https://kit.fontawesome.com/7f061c2db6.js" crossorigin="anonymous"></script>
 
   <script>
-    alert("Welcome! \nThis page is currently under construcion by me Chris Carver, \nSome features might not work yet but feel free to check it out. \nHit 'ok' to continue.")
-
-
+    alert("\t\t\t\t\t Welcome! \n\nThis page is currently under construcion by me Chris Carver, \nSome features might not work yet but feel free to check it out. \nHit 'ok' to continue.")
   </script>
+
   <style>
 
-  .projects {
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    display: inline-block;
-    box-shadow: 20px 25px 30px black;
-
+  .top {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
   }
-
-  .qualifications {
-    padding: 20px;
-    margin-top: 50px;
-    margin-left: 50px;
-    display: inline-block;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 20px 25px 30px black;
-    background-color: white;
-
-  }
-
 
   .about_me {
+    margin-top: 45px;
     padding: 10px;
     font-size: 20px;
     text-align: center;
@@ -45,35 +29,99 @@
     box-shadow: 20px 25px 30px black;
     background-color: white;
     width: 300px;
+    height: 400px;
 
   }
 
+  .projects {
+    margin: 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 20px 25px 30px black;
+
+  }
+
+  .form {
+    display: flex;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 20px 25px 30px black;
+  }
+
+  .qualifications {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 20px;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 20px 25px 30px black;
+    background-color: white;
+    width: 800px;
+    position: relative;
+    left: 20px;
+
+  }
+
+
   @media (max-width: 1130px) {
+
+    .top {
+      display: block;
+    }
       .about_me {
-        font-size: 150%;
+        font-size: 300%;
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 40px;
-        scale: 120%;
-        width: 60%
-      }
-
-      .qualifications {
-        font-size: 150%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
+        width: 80%;
+        height: auto;
       }
 
       .projects {
-        font-size: 150%;
+        position: relative;
+        top: 10px;
+        font-size: 250%;
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 10%
       }
+
+      .form {
+        text-align: center;
+        font-size: 200%;
+        margin-top: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .form input {
+        text-align: center;
+        font-size: 100%
+      }
+
+
+      .qualifications {
+        margin-top: 10%;
+        font-size: 300%;
+        width: 800px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+      }
+
+
+
 
   }
 
@@ -83,53 +131,76 @@
 
 <header>
 
-  <i id="nav" class="navbars fas fa-bars"></i>
-<img src="https://fontmeme.com/permalink/201214/547de15e42e04ac130253e1345ea43dd.png" alt="signature-fonts" border="0">
+  <a href="index.html">Home</a>
+  <a href="about_me.html">About Me</a>
+<img src="https://fontmeme.com/permalink/201214/547de15e42e04ac130253e1345ea43dd.png" alt="signature-fonts" >
+  <a href="portfolio.html">Portfolio</a>
+  <a href="qualifications.html">Certifications</a>
+
 <div>
-  <h1 style="display:inline; font-size: 60%;">Contact:</h1>
-  <a target="_blank "href="http://www.github.com/ccarver80"><i class="fab fa-github"></i></a>
+  <a target="_blank" href="http://www.github.com/ccarver80"><i class="fab fa-github"></i></a>
   <a target="_blank" href="https://www.linkedin.com/in/christopher-carver-5366871bb/"><i class="fab fa-linkedin-in"></i></a>
   <a target="_blank" href="mailto:chris@chriscarver.tech"><i class="far fa-envelope"></i></a>
 </div>
 
 </header>
 
-<body>
 
 
   <main>
-<section class="about_me">
-
-  <img style="width:200px;border-radius: 20px; box-shadow: 20px 25px 30px black;"src="imgs/profile2.jpg" alt="Profile Pic">
-
-  <h2>About me</h2>
-    <p>My name is Chris Carver, I live in North Dakota. I am a computer nerd at heart....<a href="about_me.html"><em>read more</em></a></p>
-</section>
 
 
-    <section class="projects">
+<section class="top">
+
+  <div class="about_me">
+
+    <img style="width:200px;border-radius: 20px; box-shadow: 20px 25px 30px black;" src="imgs/profile2.jpg" alt="Profile Pic">
+
+    <h2>About me</h2>
+      <p>My name is Chris Carver, I live in North Dakota. I am a computer nerd at heart....<a href="about_me.html"><em>read more</em></a></p>
+  </div>
+
+
+    <div class="projects">
       <h2>Current Projects:</h2>
-        <p>Example</p>
-      </section>
+        <p>Currently I am working on this website.</p>
+      <h2>Upcomming Projects:</h2>
+        <p>In the future I will be designing a website for my local coffee shop, check back later for updates!</p>
+      <h2>Completed Projects</h2>
+        <p>To see my completed projects<a href="portfolio.html">Click Here</a></p>
+    </div>
 
 
+      <form class="form" action="mailto:chris@chriscarver.tech" method="post" enctype="">
+        <h2>Contact Me</h2>
+        <input type="text" placeholder="Name">
+        <br><br>
+        <input type="text" placeholder="Email">
+        <br><br>
+        <input type="text" name="phone" placeholder="Phone Number *optional*">
+        <br><br>
+        <input style="height:200px;" type="text" name="description" placeholder="Description">
+        <br><br>
+        <input type="submit" value="Submit" >
+      </form>
 
-<section class="qualifications">
-  <h2> Qualifications </h2>
-  <a target="_blank "href="https://www.freecodecamp.org/ccarver80"><i style="font-size: 50px;" class="fab fa-free-code-camp">FreeCodeCamp.org</i></a>
-  <br>
-  <br>
-  <a href="qualifications.html"><i style="font-size: 50px;" class="fas fa-university">Certifications</i>
 </section>
+
+
+<div class="qualifications">
+  <h2> Qualifications </h2>
+  <h3>Here you can click on and find my certifications and class progress</h3>
+  <a target="_blank" href="https://www.freecodecamp.org/ccarver80"><i style="font-size: 50px;" class="fab fa-free-code-camp">freeCodeCamp Profile</i></a>
+  <br>
+  <br>
+  <a href="qualifications.html"><i style="font-size: 50px;" class="fas fa-university"> Certifications</i></a>
+
+</div>
+
+
 
 
 
 
 </main>
-
-
-  <footer>This is my footer</footer>
-
-
-
-</body>
+<footer>This website was designed by Chris Caver. Vist my website <a href="https://www.chriscarver.tech">here.</a></footer>

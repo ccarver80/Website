@@ -1,5 +1,5 @@
 header {
-
+  padding:20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,11 +12,16 @@ header {
 }
 
 
-.navbars {
-  position: relative;
-  color: white;
+header a {
   font-size: 40px;
-  left: 20px;
+  color: inherit;
+}
+
+header a:hover{
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 10px;
 }
 
 
@@ -34,6 +39,7 @@ header div{
   font-size: 40px;
   right: 20px;
 
+
 }
 
 body {
@@ -45,37 +51,73 @@ main {
   border-radius: 20px;
   box-shadow: 20px 25px 30px black;
   background-color: rgba(162, 172, 145, 1);
-  height: ;
+  height: auto;
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 50px
 }
 
+footer {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  background-color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 20px;
+  box-shadow: 20px 25px 30px black;
+  margin-top: 30px;
+}
+
 @media (max-width: 1130px) {
-  .qualifications {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 50px;
-  }
 
   header {
+    display: block;
     height: 200px;
   }
 
+header a {
+  font-size: 30px;
+  padding: 20px;
+  position: relative;
+  top: 150px;
+  display: inline;
+  margin-bottom: 0px;
 
-  .navbars {
-    font-size: 75px;
-  }
+}
 
-  header div{
+header img {
+  padding: 20px;
+  float: left;
+  display: block;
+  position: relative;
+  bottom: 50px;
+  width: 60%;
+}
+
+  
+
+  header div {
+    position: relative;
+    bottom: 150px;
+    left: 20px;
+    float: right;
     font-size: 50px;
 
   }
 
-  header img{
-    width: 40%
+
+
+  main {
+    height: auto;
+
   }
+
+  footer {
+    position: relative;
+    bottom: 0px;
+    margin-top: 50px;
+  }
+
 
 }
