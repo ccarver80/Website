@@ -28,7 +28,8 @@ header h1 {
 
 #languages h3 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
+  background-color: gray;
 }
 
 .hide {
