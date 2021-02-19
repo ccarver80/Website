@@ -2,19 +2,21 @@ $( document ).ready(function() {
 
   //Slide in Animations
 
-  $('#profile').hide().delay(1000).slideDown();
+  $('#profile').hide().delay(1000).slideDown(500);
 
-  $('#name').hide().delay(2000).slideDown();
+  $('#name').hide().delay(1500).slideDown(500);
 
-  $('#toolbox').hide().delay(3000).slideDown();
+  $('#toolbox').hide().delay(2000).slideDown(500);
+
+  $('#projects').hide().delay(2500).slideDown(500);
+
+  $('#cert').hide().delay(3000).slideDown(500);
 
 
   //Hover Animations
 
   $('.hover').hover(function() {
     $('.text').css('display', 'block');
-  }, function() {
-    $('.text').css('display', 'none');
   });
 
   $('.hover1').hover(function() {
