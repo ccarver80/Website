@@ -1,62 +1,39 @@
-header {
-  margin-left: 0;
-  margin right: 0;
-  margin-top: 10rem;
-  display: flex;
-  background-color: ;
-}
-
-header h1 {
-  display: flex;
-  margin: auto;
-  font-size: 3rem;
-}
-
-.vl {
-  border-left: 6px solid gray;
-  height: 6rem;
-  position: relative;
-  left: 50%;
+* {
+  background-color: black;
 }
 
 #profile {
-  border-radius: 50%;
   height: 20rem;
-
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#toolbox {
-  text-align: center;
-}
-
-
-#colum h3 {
-  font-weight: bold;
+#code {
   font-size: 3rem;
-  background-color: gray;
+  color: white;
 }
 
-.hide {
-  display: none;
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5rem;
 }
 
-
-#colum {
-  font-size: 2rem;
-}
-
-#projects{
-  margin: 0rem 3rem 0rem 3rem;
+h1 {
+  font-style: italic;
+  font-family: monospace;
+  color: white;
   text-align: center;
+  font-size: 5rem;
 }
 
-#main {
-  padding: 3rem;
-  display: flex;
-  margin-top: 2rem;
-
-}
-
-#cert {
+h2 {
+  font-size: 3rem;
+  color: white;
+  font-family: monospace;
+  font-style: italic;
   text-align: center;
 }
