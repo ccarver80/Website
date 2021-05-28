@@ -3,7 +3,7 @@
 }
 
 #profile {
-  height: 20rem;
+  height: 15rem;
   border-radius: 50%;
   display: block;
   margin-left: auto;
@@ -11,6 +11,7 @@
 }
 
 #code {
+  font-family: monospace;
   font-size: 3rem;
   color: white;
 }
@@ -19,12 +20,14 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 5rem;
+  height: 10rem;
 }
+
+
 
 h1 {
   font-style: italic;
-  font-family: monospace;
+  font-family: cursive;
   color: white;
   text-align: center;
   font-size: 5rem;
@@ -33,7 +36,15 @@ h1 {
 h2 {
   font-size: 3rem;
   color: white;
-  font-family: monospace;
+  font-family: cursive;
   font-style: italic;
   text-align: center;
+}
+
+h3{
+  font-size: 2rem;
+  color: white;
+  font-family: cursive;
+  font-style: italic;
+  margin-left: 25%;
 }
