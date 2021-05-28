@@ -2,28 +2,44 @@
   background-color: black;
 }
 
+#name {
+  margin: 2rem;
+}
 #profile {
   height: 15rem;
   border-radius: 50%;
   display: block;
-  margin-left: auto;
+  margin-left:auto;
   margin-right: auto;
 }
 
 #logo {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   height: 10rem;
 }
 
 #react {
-  height: 10rem;
+  height: 5rem;
   /* Once I learn react  */
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
 }
+
+#menu h2 {
+  display: inline;
+  margin-right: 5rem;
+
+}
+
+#menu {
+  display: block;
+  text-align: right;
+  margin-top: 2rem;
+}
+
 
 
 h1 {
