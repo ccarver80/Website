@@ -10,12 +10,6 @@
   margin-right: auto;
 }
 
-#code {
-  font-family: monospace;
-  font-size: 3rem;
-  color: white;
-}
-
 #logo {
   display: block;
   margin-left: auto;
@@ -23,6 +17,13 @@
   height: 10rem;
 }
 
+#react {
+  height: 10rem;
+  /* Once I learn react  */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 h1 {
