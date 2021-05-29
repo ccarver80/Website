@@ -5,6 +5,7 @@
 #name {
   margin: 2rem;
 }
+
 #profile {
   height: 15rem;
   border-radius: 50%;
@@ -28,16 +29,25 @@
   margin-right: auto;
 }
 
-#menu h2 {
-  display: inline;
-  margin-right: 5rem;
 
+i {
+  color: white;
+  margin-left: 5rem;
 }
 
+#menu h2 {
+  background-color: gray;
+}
+
+
 #menu {
-  display: block;
-  text-align: right;
+  background-color: gray;
+  position: absolute;
+  display: none;
+  text-align: center;
   margin-top: 2rem;
+  margin-left: 2rem;
+  padding: 2rem;
 }
 
 
