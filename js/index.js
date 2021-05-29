@@ -1,9 +1,15 @@
 const menu = document.getElementById('menu');
+const icon = document.getElementById('icon');
 
-function menuCLick() {
-  if (menu.style.display == "none") {
-    menu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-  }
+
+
+function mouseOver() {
+  menu.style.display = "block";
 }
+
+function mouseOut() {
+  menu.style.display = "none";
+}
+
+icon.addEventListener("mouseover", mouseOver);
+icon.addEventListener("mouseout", mouseOut);
