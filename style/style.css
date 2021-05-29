@@ -36,12 +36,14 @@ i {
 }
 
 #menu h2 {
-  background-color: gray;
+  color: black;
+  background-color: white;
 }
 
 
 #menu {
-  background-color: gray;
+  border-radius: 10%;
+  background-color: white;
   position: absolute;
   display: none;
   text-align: center;
