@@ -46,15 +46,27 @@
   padding: 2rem;
 }
 
-
-#menu h2{
+#menu a {
   color: black;
   background-color: white;
+
+}
+
+#menu h2 {
+  color: black;
+  background-color: white;
+}
+
+
+#menu a:hover {
+  color: white;
+  background-color: black;
 }
 
 #menu h2:hover {
   color: white;
   background-color: black;
+  border-radius: 10%;
 }
 
 
