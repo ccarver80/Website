@@ -2,6 +2,10 @@
   background-color: lightgray;
 }
 
+#profile_home {
+  display: none;
+}
+
 #name {
   margin: 2rem;
 }
@@ -29,42 +33,7 @@
   margin-right: auto;
 }
 
-#icon {
-  color: white;
-  margin-left: 5rem;
-}
 
-#menu {
-  border-radius: 10%;
-  background-color: white;
-  position: absolute;
-  display: none;
-  text-align: center;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  padding: 2rem;
-}
-
-#menu a {
-  color: black;
-  background-color: white;
-}
-
-#menu h2 {
-  color: black;
-  background-color: white;
-}
-
-#menu a:hover {
-  color: white;
-  background-color: black;
-}
-
-#menu h2:hover {
-  color: white;
-  background-color: black;
-  border-radius: 10%;
-}
 
 #terminalContainer {
   display: none;
