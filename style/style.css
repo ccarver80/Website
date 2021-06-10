@@ -1,5 +1,5 @@
 * {
-  background-color: black;
+  background-color: lightgray;
 }
 
 #name {
@@ -10,7 +10,7 @@
   height: 15rem;
   border-radius: 50%;
   display: block;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -28,7 +28,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 
 #icon {
   color: white;
@@ -49,14 +48,12 @@
 #menu a {
   color: black;
   background-color: white;
-
 }
 
 #menu h2 {
   color: black;
   background-color: white;
 }
-
 
 #menu a:hover {
   color: white;
@@ -69,7 +66,51 @@
   border-radius: 10%;
 }
 
+#terminalContainer {
+  display: none;
+  margin-left: 0rem;
+  background-color: black;
+  border: white;
+  border-width: 1px;
+  border-style: solid;
+  position: fixed;
+  bottom: 0rem;
+  width: 99%;
+}
 
+#terminalContainer h1 {
+  display: inline-block;
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-left: .3rem;
+}
+
+#terminalText {
+  width: 80%;
+  color: yellow;
+  margin: 1rem;
+  background-color: black;
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 3rem;
+}
+
+#run {
+  background-color: white;
+  font-size: 3rem;
+  left: 2rem;
+}
+
+.functions {
+  align-items: center;
+  background-color: white;
+  font-size: 2rem;
+  margin-left: 3rem;
+  margin-bottom: 0.3rem;
+}
 
 h1 {
   font-style: italic;
@@ -87,7 +128,7 @@ h2 {
   text-align: center;
 }
 
-h3{
+h3 {
   font-size: 2rem;
   color: white;
   font-family: cursive;

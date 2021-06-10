@@ -1,17 +1,8 @@
-const icon = document.getElementById('icon');
-const menu = document.getElementById('menu');
+const terminal = document.getElementById('terminalContainer');
 
 
-
-
-function mouseOver() {
-  if (menu.style.display == "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+function displayTerminal() {
+  terminal.style.display = 'block';
 }
 
-
-
-icon.addEventListener("click", mouseOver);
+setInterval(displayTerminal, 2000);
