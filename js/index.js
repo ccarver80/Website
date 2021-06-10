@@ -1,52 +1,55 @@
-const terminal = document.getElementById('terminalContainer');
-const home = document.getElementById('home');
-const inputField = document.getElementById('terminalText');
-const homeButton = document.getElementById('homeButton');
-const projectButton = document.getElementById('projects');
-const contactButton = document.getElementById('contact');
-const stackButton = document.getElementById('stack');
-const runButton = document.getElementById('run');
-const displayDiv = document.getElementById('display');
+const terminal = document.getElementById("terminalContainer");
+const home = document.getElementById("home");
+const inputField = document.getElementById("terminalText");
+const homeButton = document.getElementById("homeButton");
+const projectButton = document.getElementById("projects");
+const contactButton = document.getElementById("contact");
+const stackButton = document.getElementById("stack");
+const runButton = document.getElementById("run");
+const displayDiv = document.getElementById("display");
 
-inputField.value ="";
-
+inputField.value = "";
 
 function displayTerminal() {
-  terminal.style.display = 'block';
+  terminal.style.display = "block";
 }
- setInterval(displayTerminal, 2000);
-
+setInterval(displayTerminal, 1000);
 
 function homePage() {
-  home.style.display = 'block';
+  home.style.display = "block";
 }
 
+homeButton.addEventListener("click", () => {
+  inputField.value = "Profile_Home";
+});
 
+projectButton.addEventListener("click", () => {
+  inputField.value = "Profile_Projects";
+});
 
-homeButton.addEventListener('click', () => {
-  inputField.value ="Profile_Home";
-})
+contactButton.addEventListener("click", () => {
+  inputField.value = "Profile_Contact";
+});
 
-projectButton.addEventListener('click', () => {
-  inputField.value ="Profile(Projects)";
-})
+stackButton.addEventListener("click", () => {
+  inputField.value = "Profile_Stack";
+});
 
-contactButton.addEventListener('click', () => {
-  inputField.value ="Profile(Contact)";
-})
+let x = document.getElementById("begining");
 
-stackButton.addEventListener('click', () => {
-  inputField.value ="Profile(Stack)";
-})
-
-runButton.addEventListener('click', () => {
+runButton.addEventListener("click", () => {
+  x.style.display = "none";
   let id = inputField.value.toLowerCase();
-  let x = document.getElementById(`${id}`);
-  x.style.display = "block";
-})
-
-
-
-
-
-
+  x = document.getElementById(`${id}`);
+  if (x == null) {
+    displayDiv.innerHTML = "<h1 id='error'>Please try Again</h1>";
+    x = document.getElementById("error");
+    function refresh() {
+      location.reload();
+    }
+    setInterval(refresh, 2000);
+  } else {
+    x.style.display = "block";
+    console.log(x);
+  }
+});

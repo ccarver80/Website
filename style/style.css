@@ -2,9 +2,46 @@
   background-color: lightgray;
 }
 
+/* Each div element for each "page" */
+#display {
+  position: fixed;
+  bottom: 10rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+  #display {
+    position: fixed;
+    bottom: 20rem;
+
+    
+  }
+}
+
 #profile_home {
   display: none;
 }
+
+#profile_projects {
+  display: none;
+}
+
+#profile_contact {
+  display: none;
+}
+
+#profile_stack {
+  display: none;
+}
+
+/* CSS Styling for invidual id's */
+
+#error {
+  background-color: red;
+  color: white;
+  padding: 2rem;
+}
+
 
 #name {
   margin: 2rem;
@@ -34,13 +71,14 @@
 }
 
 
+/* Terminal on bottom of page */
 
 #terminalContainer {
   display: none;
   margin-left: 0rem;
   background-color: black;
   border: white;
-  border-width: 1px;
+  border-width: 5px;
   border-style: solid;
   position: fixed;
   bottom: 0rem;
@@ -55,6 +93,7 @@
   margin-top: 0rem;
   margin-bottom: 0rem;
   margin-left: .3rem;
+  color: white;
 }
 
 #terminalText {
@@ -81,17 +120,18 @@
   margin-bottom: 0.3rem;
 }
 
+/*Single Elements  */
 h1 {
   font-style: italic;
   font-family: cursive;
-  color: white;
+  color:;
   text-align: center;
   font-size: 5rem;
 }
 
 h2 {
   font-size: 3rem;
-  color: white;
+  color: black;
   font-family: cursive;
   font-style: italic;
   text-align: center;

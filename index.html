@@ -21,41 +21,54 @@
   </head>
 
   <body>
-    <header>
-      
-    </header>
+
+    <header></header>
 
     <main>
-
       <!-- Terminal at bottom of page -->
-      <div  id="terminalContainer">
-        <input type="text" id="terminalText" placeholder=">"> <button id="run">Run</button>
-        <h1>Commands:</h1>
+      <div id="terminalContainer">
+        <input type="text" id="terminalText" placeholder=">" />
+        <button id="run">Run</button>
+        <h1 id="commands">Commands:</h1>
         <button id="homeButton" class="functions">Profile_Home</button>
-        <button id="projects" class="functions">Profile(Projects)</button>
-        <button id="contact" class="functions">Profile(Contact)</button>
-        <button id="stack" class="functions">Profile(Stack)</button>
-        
+        <button id="projects" class="functions">Profile_Projects</button>
+        <button id="contact" class="functions">Profile_Contact</button>
+        <button id="stack" class="functions">Profile_Stack</button>
+      </div>
+      <!-- ********************************************************** -->
 
-      </div>
       <div id="display">
-      <h1>Type or Click a Command And Hit "Run"</h1>
+        <h1 id="begining">Type or Click a Command And Hit "Run"</h1>
       </div>
+      <!-- ****************************************************** -->
 
       <div id="profile_home">
+        <h1 id="name">I'm Chris Carver</h1>
 
-      <h1 id="name">I'm Chris Carver</h1>
+        <img id="profile" src="imgs/profile.png" alt="Profile Picture" />
 
-      <img id="profile" src="imgs/profile.png" alt="Profile Picture" />
+        <h2>--Front End Developer</h2>
 
-      <h2>--Front End Developer</h2>
+        <img id="logo" src="imgs/web.png" alt="HTML" />
+        <img id="react" src="imgs/react1.png" alt="React logo" />
+      </div>
+      <!-- ******************************************************* -->
 
-      <img id="logo" src="imgs/web.png" alt="HTML" />
-      <img id="react" src="imgs/react1.png" alt="React logo" />
+      <div id="profile_projects">
+        <h1>Projects</h1>
+        <h2>From most recent to oldest</h2>
 
       </div>
+      <!-- ******************************************************* -->
 
+      <div id="profile_contact">
+        <h1>Contact Me</h1>
+      </div>
+      <!-- ******************************************************* -->
 
+      <div id="profile_stack">
+        <h1>Stack and Awards</h1>
+      </div>
     </main>
 
     <footer></footer>
