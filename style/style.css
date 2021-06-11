@@ -2,6 +2,9 @@
   background-color: lightgray;
 }
 
+body {
+  margin: 0;
+}
 /* Each div element for each "page" */
 #display {
   position: fixed;
@@ -9,14 +12,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1400px) {
-  #display {
-    position: fixed;
-    bottom: 20rem;
 
-    
-  }
-}
 
 #profile_home {
   display: none;
@@ -47,78 +43,28 @@
   margin: 2rem;
 }
 
-#profile {
-  height: 15rem;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#logo {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  height: 10rem;
-}
-
-#react {
-  height: 5rem;
-  /* Once I learn react  */
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
-/* Terminal on bottom of page */
 
-#terminalContainer {
-  display: none;
-  margin-left: 0rem;
-  background-color: black;
-  border: white;
-  border-width: 5px;
-  border-style: solid;
-  position: fixed;
-  bottom: 0rem;
-  width: 99%;
-}
-
-#terminalContainer h1 {
-  display: inline-block;
-  background-color: black;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 3rem;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-  margin-left: .3rem;
-  color: white;
-}
 
 #terminalText {
-  width: 80%;
+  width: 90%;
   color: yellow;
-  margin: 1rem;
   background-color: black;
-  display: inline-block;
-  margin-right: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 #run {
-  background-color: white;
-  font-size: 3rem;
-  left: 2rem;
+  font-size: 2rem;
+  
 }
 
-.functions {
-  align-items: center;
-  background-color: white;
+.btn {
   font-size: 2rem;
-  margin-left: 3rem;
-  margin-bottom: 0.3rem;
 }
+
+
+
 
 /*Single Elements  */
 h1 {

@@ -9,6 +9,9 @@
     />
     <meta charset="utf-8" />
     <title>Chris Carver</title>
+    <!-- Bootstrap Style Sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style/style.css" />
 
     <!-- FontAwesome script -->
@@ -25,32 +28,30 @@
     <header></header>
 
     <main>
-      <!-- Terminal at bottom of page -->
-      <div id="terminalContainer">
-        <input type="text" id="terminalText" placeholder=">" />
-        <button id="run">Run</button>
-        <h1 id="commands">Commands:</h1>
-        <button id="homeButton" class="functions">Profile_Home</button>
-        <button id="projects" class="functions">Profile_Projects</button>
-        <button id="contact" class="functions">Profile_Contact</button>
-        <button id="stack" class="functions">Profile_Stack</button>
-      </div>
-      <!-- ********************************************************** -->
 
-      <div id="display">
+      <div class="container-fluid mb-2" id="display">
         <h1 id="begining">Type or Click a Command And Hit "Run"</h1>
       </div>
       <!-- ****************************************************** -->
 
-      <div id="profile_home">
-        <h1 id="name">I'm Chris Carver</h1>
-
-        <img id="profile" src="imgs/profile.png" alt="Profile Picture" />
-
-        <h2>--Front End Developer</h2>
-
-        <img id="logo" src="imgs/web.png" alt="HTML" />
-        <img id="react" src="imgs/react1.png" alt="React logo" />
+      <div class="jumbotron vertical-center" id="profile_home">
+        <div class="row">
+          <h1 id="name">I'm Chris Carver</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img class="img-thumbnail d-block rounded-circle mx-auto"  class id="profile" src="imgs/profile.png" alt="Profile Picture" />
+          </div>
+        </div>
+        <div class="row mt-2">
+          <h2>--Front End Developer</h2>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img class="d-block mx-auto" id="logo" src="imgs/web.png" alt="HTML" />
+          </div>
+          <img class=" d-none mx-auto"  id="react" src="imgs/react1.png" alt="React logo" />
+        </div>
       </div>
       <!-- ******************************************************* -->
 
@@ -69,9 +70,43 @@
       <div id="profile_stack">
         <h1>Stack and Awards</h1>
       </div>
+
+      <!-- Terminal at bottom of page -->
+      <div class="container-fluid fixed-bottom p-2"  id="terminalContainer">
+
+        <div class="row align-items-center">
+          <div class="col-10">
+            <input class="form-control bg-dark" id="terminalText" type="text" placeholder=">>" />
+          </div>
+          <div class="col">
+            <button id="run"  type="button" class="btn btn-success">Run</button>
+          </div>
+        </div>
+
+        <div class="row align-items-center pt-2">
+          <div class="col">
+            <h1 id="commands">Commands:</h1>
+          </div>
+          <div class="col">
+            <button id="homeButton" class="btn btn-primary">Profile_Home</button>
+          </div>
+          <div class="col">
+            <button id="projects" class="btn btn-primary">Profile_Projects</button>
+          </div>
+          <div class="col">
+            <button id="contact" class="btn btn-primary">Profile_Contact</button>
+          </div>
+          <div class="col">
+            <button id="stack" class="btn btn-primary">Profile_Stack</button>
+          </div>
+        </div>
+      </div>
+      <!-- ********************************************************** -->
     </main>
 
     <footer></footer>
+    <!-- Bootstrap and JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="js/index.js"></script>
   </body>
