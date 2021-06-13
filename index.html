@@ -10,7 +10,12 @@
     <meta charset="utf-8" />
     <title>Chris Carver</title>
     <!-- Bootstrap Style Sheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="style/style.css" />
 
@@ -24,89 +29,92 @@
   </head>
 
   <body>
+    <div
+      id="mainContainer"
+      class="container-fluid bg-primary bg-gradient text-white"
+    >
+      <h1 class="text-center" id="begining">
+        Type or Click a Command And Hit "Run"
+      </h1>
 
-    <header></header>
+      <!-- ************************************************************************************** -->
 
-    <main>
-
-      <div class="container-fluid mb-2" id="display">
-        <h1 id="begining">Type or Click a Command And Hit "Run"</h1>
-      </div>
-      <!-- ****************************************************** -->
-
-      <div class="jumbotron vertical-center" id="profile_home">
-        <div class="row">
-          <h1 id="name">I'm Chris Carver</h1>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img class="img-thumbnail d-block rounded-circle mx-auto"  class id="profile" src="imgs/profile.png" alt="Profile Picture" />
-          </div>
-        </div>
-        <div class="row mt-2">
-          <h2>--Front End Developer</h2>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img class="d-block mx-auto" id="logo" src="imgs/web.png" alt="HTML" />
-          </div>
-          <img class=" d-none mx-auto"  id="react" src="imgs/react1.png" alt="React logo" />
-        </div>
+      <div class="container rounded" id="profile_home">
+        <h1 class="text-center display-1">Hi, Im Chris Carver</h1>
+        <img
+          class="img-thumbnail rounded-circle mx-auto d-block"
+          src="imgs/profile.png"
+          alt="profile-picture"
+        />
+        <h1 class="text-center mt-5 display-2">--Front End Developer</h1>
       </div>
       <!-- ******************************************************* -->
 
-      <div id="profile_projects">
+      <div class="container" id="profile_projects">
         <h1>Projects</h1>
         <h2>From most recent to oldest</h2>
-
       </div>
-      <!-- ******************************************************* -->
 
-      <div id="profile_contact">
+      <!-- *********************************************************** -->
+
+      <div class="d-none" id="profile_contact">
         <h1>Contact Me</h1>
       </div>
-      <!-- ******************************************************* -->
 
-      <div id="profile_stack">
+      <!-- **************************************************************** -->
+
+      <div class="d-none" id="profile_stack">
         <h1>Stack and Awards</h1>
       </div>
 
-      <!-- Terminal at bottom of page -->
-      <div class="container-fluid fixed-bottom p-2"  id="terminalContainer">
+      <!-- *************************************************************** -->
+    </div>
 
-        <div class="row align-items-center">
-          <div class="col-10">
-            <input class="form-control bg-dark" id="terminalText" type="text" placeholder=">>" />
-          </div>
-          <div class="col">
-            <button id="run"  type="button" class="btn btn-success">Run</button>
-          </div>
+    <div
+      class="container-fluid fixed-bottom bg-dark text-white"
+      id="terminalContainer"
+    >
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <input
+            class="form-control border-3 bg-dark"
+            id="terminalText"
+            type="text"
+            placeholder=">>"
+          />
         </div>
-
-        <div class="row align-items-center pt-2">
-          <div class="col">
-            <h1 id="commands">Commands:</h1>
-          </div>
-          <div class="col">
-            <button id="homeButton" class="btn btn-primary">Profile_Home</button>
-          </div>
-          <div class="col">
-            <button id="projects" class="btn btn-primary">Profile_Projects</button>
-          </div>
-          <div class="col">
-            <button id="contact" class="btn btn-primary">Profile_Contact</button>
-          </div>
-          <div class="col">
-            <button id="stack" class="btn btn-primary">Profile_Stack</button>
-          </div>
+        <div class="col-2">
+          <button id="run" type="button" class="btn btn-success">Run</button>
         </div>
       </div>
-      <!-- ********************************************************** -->
-    </main>
 
-    <footer></footer>
+      <div class="row align-items-center pt-2">
+        <div class="col">
+          <h1 id="commands">Commands:</h1>
+        </div>
+        <div class="col">
+          <button id="homeButton" class="btn btn-primary">Profile_Home</button>
+        </div>
+        <div class="col">
+          <button id="projects" class="btn btn-primary">
+            Profile_Projects
+          </button>
+        </div>
+        <div class="col">
+          <button id="contact" class="btn btn-primary">Profile_Contact</button>
+        </div>
+        <div class="col">
+          <button id="stack" class="btn btn-primary">Profile_Stack</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap and JS script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
 
     <script type="text/javascript" src="js/index.js"></script>
   </body>

@@ -6,14 +6,14 @@ const projectButton = document.getElementById("projects");
 const contactButton = document.getElementById("contact");
 const stackButton = document.getElementById("stack");
 const runButton = document.getElementById("run");
-const displayDiv = document.getElementById("display");
+const displayDiv = document.getElementById("mainContainer");
 
 inputField.value = "";
 
 function displayTerminal() {
   terminal.style.display = "block";
 }
-setInterval(displayTerminal, 1000);
+setInterval(displayTerminal, 500);
 
 function homePage() {
   home.style.display = "block";
@@ -47,7 +47,7 @@ runButton.addEventListener("click", () => {
     function refresh() {
       location.reload();
     }
-    setInterval(refresh, 2000);
+    setInterval(refresh, 500);
   } else {
     x.style.display = "block";
     console.log(x);
