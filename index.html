@@ -28,16 +28,20 @@
     <style></style>
   </head>
 
-  <body>
+  <body class="bg-primary text-white">
     <div
       id="mainContainer"
-      class="container-fluid bg-primary bg-gradient text-white"
+      class="container-fluid"
     >
+    <div class="container ms-0 mb-2 fixed-bottom">
+      <button id="menuButton" type="button" class="btn btn-success">Display Terminal</button>
+    </div>
+
       <h1 class="text-center display-1 mt-5" id="begining">
         Type or Click a Command And Hit "Run"
       </h1>
     
-
+      
       <!-- ************************************************************************************** -->
 
       <div class="container-fluid rounded" id="profile_home">
@@ -113,7 +117,7 @@
           <button id="run" type="button" class="btn btn-success">Run</button>
         </div>
         <div class="col">
-          <button id="clear" type="button" class="btn btn-danger">Clear</button>
+          <button id="clear" type="button" class="btn btn-danger">Hide</button>
         </div>
       </div>
 

@@ -1,4 +1,5 @@
 // page elements
+const menu = document.getElementById("menuButton")
 const terminal = document.getElementById("terminalContainer");
 const inputField = document.getElementById("terminalText");
 const homeButton = document.getElementById("homeButton");
@@ -9,8 +10,16 @@ const runButton = document.getElementById("run");
 const clearButton = document.getElementById("clear")
 const displayDiv = document.getElementById("mainContainer");
 
+function displayTerminal() {
+  terminal.style.display = "block";
+}
+
+menu.addEventListener("click", displayTerminal);
+
+
 // makes input feild a string value
 inputField.value = "";
+
 
 
 // each pages button values to be put into the input feild 
@@ -53,5 +62,5 @@ runButton.addEventListener("click", () => {
 
 // clears input field
 clearButton.addEventListener("click", () => {
-  inputField.value = "";
+  terminal.style.display = "none";
 })
