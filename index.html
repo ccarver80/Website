@@ -33,26 +33,52 @@
       id="mainContainer"
       class="container-fluid bg-primary bg-gradient text-white"
     >
-      <h1 class="text-center" id="begining">
+      <h1 class="text-center display-1 mt-5" id="begining">
         Type or Click a Command And Hit "Run"
       </h1>
+    
 
       <!-- ************************************************************************************** -->
 
-      <div class="container rounded" id="profile_home">
+      <div class="container-fluid rounded" id="profile_home">
         <h1 class="text-center display-1">Hi, Im Chris Carver</h1>
         <img
           class="img-thumbnail rounded-circle mx-auto d-block"
           src="imgs/profile.png"
           alt="profile-picture"
         />
-        <h1 class="text-center mt-5 display-2">--Front End Developer</h1>
+        <h2 class="text-center mt-5 display-2">--Front End Developer</h2>
+        <div id="icons" class="row text-center mt-3">
+          <div class="col">
+            <a class="nav-link text-white" target="_blank" href="https://twitter.com/codingCarver"><i class="fab fa-twitter-square fa-5x"></i></a>
+          </div>
+          <div class="col">
+            <a class="nav-link text-white" target="_blank" href="https://www.linkedin.com/in/christopher-carver-5366871bb"><i class="fab fa-linkedin-in fa-5x"></i></a>
+          </div>
+          <div class="col">
+            <a class="nav-link text-white" target="_blank" href="https://github.com/ccarver80"><i class="fab fa-github fa-5x"></i></a>
+          </div>
+        <div class="col">
+          <a class="nav-link text-white" href = "mailto: ckc_80@outlook.com"><i class="fas fa-envelope-square fa-5x"></i></a>
+        </div>
+      </div>
       </div>
       <!-- ******************************************************* -->
 
       <div class="container" id="profile_projects">
-        <h1>Projects</h1>
-        <h2>From most recent to oldest</h2>
+        <h1 class="text-center">Projects</h1>
+        <h2 class="text-center">From most recent to oldest</h2>
+        <div class="row mt-5">
+          <div class="col">
+            <h1>Random Quote Generator</h1>
+          </div>
+          <div class="col">
+            <h1>Door Chooser Game</h1>
+          </div>
+          <div class="col">
+            <h1>Background Generator App</h1>
+          </div>
+        </div>
       </div>
 
       <!-- *********************************************************** -->
@@ -75,7 +101,7 @@
       id="terminalContainer"
     >
       <div class="row justify-content-center">
-        <div class="col-10">
+        <div class="col-10 mx-auto">
           <input
             class="form-control border-3 bg-dark"
             id="terminalText"
@@ -83,8 +109,11 @@
             placeholder=">>"
           />
         </div>
-        <div class="col-2">
+        <div class="col">
           <button id="run" type="button" class="btn btn-success">Run</button>
+        </div>
+        <div class="col">
+          <button id="clear" type="button" class="btn btn-danger">Clear</button>
         </div>
       </div>
 

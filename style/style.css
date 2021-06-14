@@ -1,8 +1,14 @@
+
 #profile_home {
+  padding: 5rem;
   display: none;
-  font-family: cursive;
-  background-color: rgba(255, 255, 255, 0.2);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: fit-content;
+  
+}
+
+#profile_home h1 {
+  font-size: 6rem;
 }
 
 #profile_projects {
@@ -16,14 +22,10 @@
 }
 
 #mainContainer {
-  padding-top: 20vh;
-  background-color: coral;
   height: 83vh;
+  padding-top: 2rem;
 }
 
-#begining {
-  font-size: 3rem;
-}
 
 #terminalContainer {
   padding-top: 1rem;
@@ -38,5 +40,9 @@
 }
 
 #run {
+  font-size: 2rem;
+}
+
+#clear {
   font-size: 2rem;
 }

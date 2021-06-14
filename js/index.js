@@ -1,24 +1,19 @@
+// page elements
 const terminal = document.getElementById("terminalContainer");
-const home = document.getElementById("home");
 const inputField = document.getElementById("terminalText");
 const homeButton = document.getElementById("homeButton");
 const projectButton = document.getElementById("projects");
 const contactButton = document.getElementById("contact");
 const stackButton = document.getElementById("stack");
 const runButton = document.getElementById("run");
+const clearButton = document.getElementById("clear")
 const displayDiv = document.getElementById("mainContainer");
 
+// makes input feild a string value
 inputField.value = "";
 
-function displayTerminal() {
-  terminal.style.display = "block";
-}
-setInterval(displayTerminal, 500);
 
-function homePage() {
-  home.style.display = "block";
-}
-
+// each pages button values to be put into the input feild 
 homeButton.addEventListener("click", () => {
   inputField.value = "Profile_Home";
 });
@@ -37,6 +32,8 @@ stackButton.addEventListener("click", () => {
 
 let x = document.getElementById("begining");
 
+
+// displays pages when "run" button clicked
 runButton.addEventListener("click", () => {
   x.style.display = "none";
   let id = inputField.value.toLowerCase();
@@ -53,3 +50,8 @@ runButton.addEventListener("click", () => {
     console.log(x);
   }
 });
+
+// clears input field
+clearButton.addEventListener("click", () => {
+  inputField.value = "";
+})
