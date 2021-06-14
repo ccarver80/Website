@@ -33,8 +33,8 @@
       id="mainContainer"
       class="container-fluid"
     >
-    <div class="container ms-0 mb-2 fixed-bottom">
-      <button id="menuButton" type="button" class="btn btn-success">Display Terminal</button>
+    <div class="container ms-0 mt-5 fixed-top">
+      <button id="menuButton" type="button" class="btn btn-lg btn-success">Display Terminal</button>
     </div>
 
       <h1 class="text-center display-1 mt-5" id="begining">
@@ -69,18 +69,29 @@
       </div>
       <!-- ******************************************************* -->
 
-      <div class="container" id="profile_projects">
-        <h1 class="text-center">Projects</h1>
+      <div class="container-fluid " id="profile_projects">
+        <h1 class="text-center display-1">Projects</h1>
         <h2 class="text-center">From most recent to oldest</h2>
         <div class="row mt-5">
-          <div class="col">
-            <h1>Random Quote Generator</h1>
+          <div class="col-4">
+            <a class="nav-link text-white" target="_blank" href="https://ccarver80.github.io/Random-Quote-Generator-TT-1/">
+              <img class="img-thumbnail" src="imgs/Random-Quote.png" alt="Random Quote Generator">
+            </a>
+            <h1 class="display-3 text-center">Random Quote Generator</h1>
+            <p class="display-6">This is a random quote generator that I built as my first portfolio project in Team Tree House.</p>
+            <a class="nav-link text-white" target="_blank" href="https://github.com/ccarver80/Random-Quote-Generator-TT-1">
+              <button class="btn btn-lg btn-success">GitHub Code</button> 
+            </a>
           </div>
-          <div class="col">
-            <h1>Door Chooser Game</h1>
+          <div class="col-4">
+            <img class="img-thumbnail" src="imgs/door-game.png" alt="Door Chooser Game">
+            <h1 display-3>Door Chooser Game</h1>
+            <p class="display-6">A simple javascript game I built on my own after learning about DOM manipulation</p>
           </div>
-          <div class="col">
-            <h1>Background Generator App</h1>
+          <div class="col-4">
+            <img class="img-thumbnail" src="imgs/color-changer.png" alt="Color-Changer-App">
+            <h1 class="display-3">Background Generator App</h1>
+            <p class="display-6">A simple app that uses javascript to randomly pick a rgb value and changes the background color</p>
           </div>
         </div>
       </div>
@@ -134,10 +145,10 @@
           </button>
         </div>
         <div class="col">
-          <button id="contact" class="btn btn-primary">Profile_Contact</button>
+          <button id="stack" class="btn btn-primary">Profile_Stack</button>
         </div>
         <div class="col">
-          <button id="stack" class="btn btn-primary">Profile_Stack</button>
+          <button id="contact" class="btn btn-primary d-none">Profile_Contact</button>  <!--Display when back end learned for contact form-->
         </div>
       </div>
     </div>

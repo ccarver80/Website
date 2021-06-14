@@ -12,6 +12,7 @@ const displayDiv = document.getElementById("mainContainer");
 
 function displayTerminal() {
   terminal.style.display = "block";
+  menu.style.display = "none";
 }
 
 menu.addEventListener("click", displayTerminal);
@@ -39,28 +40,32 @@ stackButton.addEventListener("click", () => {
   inputField.value = "Profile_Stack";
 });
 
-let x = document.getElementById("begining");
+let currentPage = document.getElementById("begining");
 
 
 // displays pages when "run" button clicked
 runButton.addEventListener("click", () => {
-  x.style.display = "none";
+  currentPage.style.display = "none";
   let id = inputField.value.toLowerCase();
-  x = document.getElementById(`${id}`);
-  if (x == null) {
+  currentPage = document.getElementById(`${id}`);
+  if (currentPage == null) {
     displayDiv.innerHTML = "<h1 id='error'>Please try Again</h1>";
-    x = document.getElementById("error");
+    currentPage = document.getElementById("error");
     function refresh() {
       location.reload();
     }
     setInterval(refresh, 500);
   } else {
-    x.style.display = "block";
-    console.log(x);
+    currentPage.style.display = "block";
+    inputField.value = ""; 
+    terminal.style.display = "none";
+    menu.style.display = "block"
   }
 });
 
-// clears input field
+// clears input field and Hides
 clearButton.addEventListener("click", () => {
+  inputField.value = "";
   terminal.style.display = "none";
+  menu.style.display = "block";
 })

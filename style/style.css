@@ -1,4 +1,8 @@
 
+#menuButton {
+  display: none;
+}
+
 #profile_home {
   padding: 5rem;
   display: none;
