@@ -1,4 +1,6 @@
-
+body {
+  background-color: lightskyblue;
+}
 #menuButton {
   display: none;
 }
